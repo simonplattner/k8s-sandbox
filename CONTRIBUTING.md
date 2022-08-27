@@ -1,12 +1,10 @@
 # Welcome to the project!
 
-## Report bugs and feature requests
-
-Users of the product that wish to report bugs or feature requests are invited to use the _issues_ feature here on GitHub. Don't forget to check if an issue for your input already exists. The project offers issue templates that can help you identify all the relevant information.
+This project is a sandbox for my personal use. I am grateful for suggestions and feedback in general.
 
 ## Discuss the project
 
-When you just want to talk about this project or engage with the community, then feel free to use the _discussion_ feature here on GitHub.
+Feel free to use the _discussion_ feature here on GitHub.
 
 ## Create pull requests
 
