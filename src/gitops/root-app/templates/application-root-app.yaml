@@ -8,7 +8,7 @@ metadata:
   labels:
     argocd.argoproj.io/instance: root-app
 spec:
-  project: default
+  project: k8s-sandbox
   source:
     repoURL: https://github.com/simonplattner/k8s-sandbox
     path: src/gitops/root-app

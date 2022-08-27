@@ -6,7 +6,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default
+  project: k8s-sandbox
   source:
     repoURL: https://github.com/simonplattner/k8s-sandbox
     path: src/gitops/argo-cd
