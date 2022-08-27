@@ -9,3 +9,6 @@ helm install argo-cd argo/argo-cd \
   --namespace gitops \
   --create-namespace \
   --version 5.3.6
+
+sed 's/{{ .Values.targetRevision }}/main/g' src/gitops/root-app/templates/application-root-app.yaml |
+  kubectl apply -f - --namespace gitops

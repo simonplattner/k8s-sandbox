@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: root-app
+  namespace: gitops
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+  labels:
+    argocd.argoproj.io/instance: root-app
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/simonplattner/k8s-sandbox
+    path: src/gitops/root-app
+    targetRevision: {{ .Values.targetRevision }}
+  destination:
+    name: in-cluster
+    namespace: gitops
